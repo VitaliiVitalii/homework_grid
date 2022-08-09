@@ -1,0 +1,32 @@
+@use './mixins/media' as *;
+@use './variables/variables' as *;
+
+.block-first {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 370px));
+    gap: 2.5%;
+
+    @include media($md) {
+        gap: 0.5%;
+    
+    }
+
+    &__item {
+        min-width: 100px;
+
+        & img {
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            min-height: 180px;
+    
+        }
+
+    }
+
+
+.first-long {
+    grid-column: span 2;
+
+    }
+
+}

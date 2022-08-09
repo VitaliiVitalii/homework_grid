@@ -1,0 +1,32 @@
+
+body {
+    font-family: 'Delius Unicase', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+
+}
+
+img {
+    object-fit: scale-down;
+    opacity: .9;
+    object-fit: contain;
+
+    &:hover {
+        opacity: 1;
+        
+    }
+    
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+
+.grid {
+    display: grid;
+}
+
